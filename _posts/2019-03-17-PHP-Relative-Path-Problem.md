@@ -6,21 +6,27 @@ tags: [PHP]
 comments: true
 ---
 
-|/a/a.php
 |b.php
-|/c/c.php
+|/dir_a/a.php
+|/dir_c/c.php
 
-If b.php 
+When b.php *include* a.php in /dir_a/a.php
 
 ```php
 #b.php
-include(../a/a.php);
+include("./dir_a/a.php");
 ```
+it would be ok.
 
-but if c.php also *includes* b.php 
+but then when c.php also *includes* b.php 
 ```php
-#c.php
-include(./b.php);
+#/dir_c/c.php
+include("../b.php");
+```
+there will be an error
+```php
+Warning: include(./dir_a/a.php): failed to open stream: No such file or directory in ...
+Warning: include(): Failed opening './dir_a/a.php' for inclusion (include_path='.:') in ....
 ```
 
 
