@@ -43,6 +43,10 @@ class GO_Example_Model_Thing extends GO_Base_Db_ActiveRecord {
 
 ```
 
+{% highlight javascript linenos %}
+class GO_Example_Model_Thing extends GO_Base_Db_ActiveRecord {
+
+{% endhighlight %}
 ```javascript
 var foo = function(x) {
   return(x + 5);
