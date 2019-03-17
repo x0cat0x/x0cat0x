@@ -7,7 +7,9 @@ comments: true
 ---
 
 |b.php
+
 |/dir_a/a.php
+
 |/dir_c/c.php
 
 When b.php *include* a.php in /dir_a/a.php
@@ -28,9 +30,13 @@ there will be an error
 Warning: include(./dir_a/a.php): failed to open stream: No such file or directory in ...
 Warning: include(): Failed opening './dir_a/a.php' for inclusion (include_path='.:') in ....
 ```
-
+ since c.php doesn't know where the a.php file located
+ 
+ Solution:
 
 ```php
-include(dirname(__FILE__) . "/dir/script_name.php");
+#b.php
+#include(dirname(__FILE__) . "/dir/script_name.php");
+include(dirname(__FILE__) . "/dir_a/a.php");
 ```
-
+will work well.
