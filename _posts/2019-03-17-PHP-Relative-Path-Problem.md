@@ -8,11 +8,11 @@ comments: true
 
 A PHP file includes another PHP file which itself includes yet another file, they all are in separate directories.
 
-|b.php
+/b.php
 
-|dir_a/a.php
+/dir_a/a.php
 
-|dir_c/c.php
+/dir_c/c.php
 
 b.php includes a.php from /dir_a/a.php
 
