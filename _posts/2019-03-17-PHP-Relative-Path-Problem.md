@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP Relative Path Problem
-subtitle: When a PHP file includes another PHP file which itself includes yet another file — all being in separate directories
+subtitle: Sultion: include(dirname(__FILE__) . "/dir/script_name.php");
 tags: [PHP]
 comments: true
 ---
