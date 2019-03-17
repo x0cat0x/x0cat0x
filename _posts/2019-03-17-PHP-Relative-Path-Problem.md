@@ -8,11 +8,11 @@ comments: true
 
 |b.php
 
-|/dir_a/a.php
+|dir_a/a.php
 
-|/dir_c/c.php
+|dir_c/c.php
 
-When b.php *include* a.php in /dir_a/a.php
+When b.php includes a.php from /dir_a/a.php
 
 ```php
 #b.php
@@ -20,7 +20,7 @@ include("./dir_a/a.php");
 ```
 it would be ok.
 
-but then when c.php also *includes* b.php 
+but then when c.php also includes b.php 
 ```php
 #/dir_c/c.php
 include("../b.php");
@@ -30,7 +30,7 @@ there will be an error
 Warning: include(./dir_a/a.php): failed to open stream: No such file or directory in ...
 Warning: include(): Failed opening './dir_a/a.php' for inclusion (include_path='.:') in ....
 ```
- since c.php doesn't know where the a.php file located
+ since c.php doesn't know where a.php located
  
  Solution:
 
