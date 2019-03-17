@@ -41,7 +41,7 @@ include(dirname(__FILE__) . "/dir/script_name.php");
 class GO_Example_Model_Thing extends GO_Base_Db_ActiveRecord {
     ...
 
-And here is the same code with syntax highlighting:
+```
 
 ```javascript
 var foo = function(x) {
