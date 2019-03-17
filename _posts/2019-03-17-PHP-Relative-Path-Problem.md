@@ -1,12 +1,12 @@
 ---
 layout: post
 title: PHP Relative Path Problem
-subtitle: PHP Relative Path Problem
+subtitle: Include files in seperate directories
 tags: [PHP]
 comments: true
 ---
 
-A PHP file includes another PHP file which itself includes yet another file, all being in separate directories
+A PHP file includes another PHP file which itself includes yet another file, they all are in separate directories.
 
 |b.php
 
