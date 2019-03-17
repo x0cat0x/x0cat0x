@@ -32,7 +32,7 @@ Warning: include(): Failed opening './dir_a/a.php' for inclusion (include_path='
 ```
  since c.php doesn't know where a.php located
  
- Solution:
+ ## Solution:
 
 ```php
 #b.php
