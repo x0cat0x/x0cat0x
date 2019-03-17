@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Test markdown
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
+title: PHP Relative Path  Problem
+subtitle: When a PHP file includes another PHP file which itself includes yet another file — all being in separate directories
+tags: [PHP]
 comments: true
 ---
 
@@ -31,10 +29,7 @@ How about a yummy crepe?
 Here's a code chunk:
 
 ~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
+include(dirname(__FILE__) . "/dir/script_name.php");
 ~~~
 
 And here is the same code with syntax highlighting:
