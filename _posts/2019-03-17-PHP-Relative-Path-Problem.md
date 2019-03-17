@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP Relative Path Problem
-subtitle: Sultion: include(dirname(__FILE__) . "/dir/script_name.php");
+subtitle: PHP Relative Path Problem
 tags: [PHP]
 comments: true
 ---
