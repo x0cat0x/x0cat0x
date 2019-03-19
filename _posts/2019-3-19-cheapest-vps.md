@@ -10,7 +10,7 @@ comments: true
 
 
 
-![vultr](https://www.vultr.com/media/badge_onblue.png)
+![vultr](https://www.vultr.com/media/logo_onblue.png)
 
 
 #2. ...
