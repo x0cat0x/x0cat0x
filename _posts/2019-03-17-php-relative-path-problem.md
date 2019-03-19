@@ -6,7 +6,7 @@ tags: [PHP]
 comments: true
 ---
 
-A PHP file includes another PHP file which itself includes yet another file, they all are in separate directories.
+A PHP file includes another PHP file which itself includes yet another file, and they all are in separate directories.
 
 /b.php
 
@@ -27,7 +27,7 @@ but then when c.php also includes b.php
 #/dir_c/c.php
 include("../b.php");
 ```
-there will be an error
+there will be errors
 ```php
 Warning: include(./dir_a/a.php): failed to open stream: No such file or directory in ...
 Warning: include(): Failed opening './dir_a/a.php' for inclusion (include_path='.:') in ....
