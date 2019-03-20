@@ -47,9 +47,9 @@ Look for the code block
 </Directory>
 ```
 
-With this current configuration, your websever is accessable from your computer itself and from all other computers in LAN network.
+With this configuration, your web sever is accessable from your computer itself and from all other computers in LAN network.
 
-To restric the access to your webserver to just your machine, change the config to 
+To restrict the access to your web server to just your computer, change the config to
 ```
     AllowOverride All
     
