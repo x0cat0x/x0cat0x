@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Local webserver access permission
-subtitle: Local webserver access permission
+subtitle: Restricting the access to your local web server
 tags: [apache]
 comments: true
 ---
