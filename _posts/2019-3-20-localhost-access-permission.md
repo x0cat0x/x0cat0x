@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localhost access permission
-subtitle: Localhost access permission
-tags: [apache][localhost]
+title: Local webserver access permission
+subtitle: Local webserver access permission
+tags: [apache]
 comments: true
 ---
 
